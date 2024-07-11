@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body main{
+    background-color: black;
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 70px;
+    background-color: black;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo-nav img{
+    width: 130px;
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #fefefe;
+    display: block;
+}
+header .navbar ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+header .navbar ul li a:hover::after{
+    opacity: 1;
+}
+/* Start Heroes */
+.hero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+.main-element img{
+    display: inline-block;
+    width: 700px;
+    height: auto;
+    padding: 0px 50px 50px 50px;
+}
+.main-text{
+    padding-right: 50px;
+}
+.com{
+    color: orange;
+}
+.text-header{
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: #fefefe;
+}
+.text-header2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #fefefe;
+}
+.paragraph{
+    color: #fefefe;
+}
+.btn-konsul-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    bottom: 0;
+    left: 0;
+}
+.btn-konsul-container:hover{
+    transform: scale(1.01);
+}
+.btn-konsul-utm{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-konsul-utm > p{
+    color: #fefefe;
+    font-weight: 500;
+}
+/* End Heroes */
+/* Start Card About Us */
+.sec-aboutUs{
+    display: flex;
+    justify-content: center;
+}
+.aboutUs-container{
+    width: 900px;
+    height: 500px;
+    background-color: orange;
+    padding: 60px 120px;
+    border-radius: 20px;
+}
+.header-aboutUs{
+    font-size: 35px;
+    padding-bottom: 20px;
+    color: #fefefe;
+}
+.span-aboutUs{
+    color: black;
+    font-weight: 500;
+}
+.text-aboutUs{
+    color: #fefefe;
+    font-size: 20px;
+    line-height: 1.5;
+}
+/* End Card About Us */
+/* Start Services Card */
+.header-services > h1{
+    color: #fefefe;
+}
+.line{
+    height: 3px;
+    width: 200px;
+    background-color: orange;
+    margin: 0px 40px;
+}
+.header-text2{
+    color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px 0px 20px;
+    padding: 20px 20px 5px 20px;
+}
+.card-service > h3, p{
+    color: #fefefe;
+}
+.img-service img{
+    width: 120px;
+    width: 120px;
+}
+.img-service, .text-service{
+    padding: 10px;
+}
+.card-service{
+    background-color: grey;
+    margin: 50px 20px 50px 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 250px;
+    border-radius: 20px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-card, .price-sv{
+    padding-bottom: 5px;
+}
+.start-from > p, .price-sv > p{
+    color: orange;
+}
+/* End Services Card */
+/* Start Footer */
+footer{
+    background-color: black;
+}
+.footer-container{
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer-container > .footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/* End Footer */
+/* Start Contact Us */
+.sec-contactUs{
+    padding-bottom: 20px;
+}
+.header-contactUs > h1{
+    color: #fefefe;
+    font-size: 35px;
+}
+.map{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    margin: 20px;
+    border-radius: 20px;
+}
+.contactUs-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.header-contactUs{
+    margin: 20px;
+}
+.text-content{
+    margin: 5px 5px 5px 20px;
+    display: flex;
+    justify-content: start;
+    padding: 5px;
+}
+.contactUs-text{
+    width: 550px;
+    margin-bottom: 20px;
+}
+.text-content > img{
+    width: 30px;
+    height: auto;
+    margin-right: 8px;
+}
+/* End Contact Us */
+/* Start Our Service Page */
+    .sec-services{
+        padding: 50px;
+    }
+    .price-container{
+        width: 250px;
+        height: 500px;
+        background-color: orange;
+        padding: 20px;
+        margin: 60px 60px 40px 30px ;
+        border-bottom-left-radius: 40px;
+    }
+    .btn-price-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        transition: all 0.3s ease;
+        bottom: 0;
+        left: 0;
+    }
+    .btn-price-container-1{
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        transition: all 0.3s ease;
+        bottom: 0;
+        left: 0;
+    }
+    .btn-price-container:hover{
+        transform: scale(1.01);
+    }
+    .btn-price-container-1:hover{
+        transform: scale(1.01);
+    }
+    .btn-konsul{
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: #fefefe;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-konsul > p{
+        color: black;
+        font-weight: 500;
+    }
+    .header-card-sv{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .text-service:has(> p.text-price-card) {
+        color: black;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .text-service p > .text-price-card{
+        color: black;
+    }
+    .card-start > p{
+        color: black;
+        padding-bottom: 10px;
+        font-weight: 500;
+    }
+    .card-price > p{
+        color: black;
+        font-size: 30px;
+        font-weight: 700;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    .text-service{
+        width: 220px;
+    }
+    .service-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .element-pricelist{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+    }
+    .element-pricelist > h1{
+        color: #fefefe;
+        margin-left: 20px;
+    }
+/* Start Our Service Page */
